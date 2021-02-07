@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+span{
+    font-family: 'Mulish',sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 24px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+h2{
+    font-weight: bold;
+    color: #000;
+    display:inline;
+    font-size: 40px;
+}
+
+
+#app{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchContainer{
+    width:100%;
+    height: auto;
+    display: flex;
+    margin-top:120px;
+    justify-content: center;
+
+}
+
+.searchContainer input{
+    width:88%;
+    border:0;
+    padding:10px;
+    border-bottom: 1px solid #b8b8b8;    
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin:0 10px;
+}
+
+.searchContainer input::placeholder{
+    color: #9b9b9b;
+}
+
+.searchContainer input:focus{
+    outline: none;
+}
+
+.searchContainer input:focus{
+    color: rgb(88, 88, 88);
+}
+
+.searchContainer button{
+    width:100px;
+    padding:10px 0;
+    background: #ffffff;
+    border:1px solid #e4e4e4;
+    font-family: 'Mulish',sans-serif;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 500ms;
+    margin-right:10px;
+    cursor: pointer;
+}
+.searchContainer button:hover{
+    background: #f2f2f2;
+}
+.searchContainer button:focus{
+    outline: none;
+}
+
+.imageLibrary{
+    width: 95%;
+    margin-top: 20px;
+}
+
+.imageLibrary ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:20px;
+}
+
+.imageLibrary li{
+    width: 20%;
+    margin-top: 20px;
+}
+
+
+
+.imageLibrary img{
+    width:90%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 500ms;
+    cursor: pointer;
+}
+.imageLibrary img:hover{
+    box-shadow: 0px 1px 2px 1px #787878;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media only screen and (max-width:760px){
+    .imageLibrary{
+        width: 100%;
+    }
+    .imageLibrary li{
+        width: 45%;
+    }
+    .imageLibrary ul{
+        justify-content: space-around;
+    }
+    .imageLibrary img{
+        width: 100%;
+    }
+}
+
+
+
+
